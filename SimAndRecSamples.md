@@ -1,7 +1,7 @@
 # Simulation and Reconstruction samples
 
 ### The information of samples on this side.
-* [MC database on github](docs/index.html)
+* [MC database on github](mc/index.html)
 
 ### Additional DBD samples
 * According to the requests by the physics group, additional physics samples have been produced
