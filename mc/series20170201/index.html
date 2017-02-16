@@ -9,6 +9,8 @@ Samples were produced using Dirac User jobs.<br>
 Last update: 9-Feb-2017
 <p>
 <p>
+<h1>Simulation samples</h1>
+
 <table border=1>
 <tr>
 <td>Production<br>date-time</td>
@@ -32,7 +34,7 @@ Last update: 9-Feb-2017
 </tr>
 
 <tr>
-<td>20170201-1520</td>
+<td><a name="ddsim-20170201-1520">20170201-1520</a></td>
 <td>v01-19-01</td>
 <td>v01-19-01-pre</td>
 <td>ILD_o1_v05<br>ILD_l1_v01<br>ILD_s1_v01</td>
@@ -45,7 +47,7 @@ Last update: 9-Feb-2017
 </tr>
 
 <tr>
-<td>20170203-0957</td>
+<td><a name="ddsim-20170203-0957"</a>20170203-0957</a></td>
 <td>v01-19-01</td>
 <td>v01-19-01-pre</td>
 <td>ILD_o1_v05<br>ILD_l1_v01<br>ILD_s1_v01</td>
@@ -80,17 +82,69 @@ single particle events of mu, gamma and k0L with momentum, 1, 2, 5, 10, 20, 50, 
 </tr>
 
 <tr>
-        <td></td>
-         
-                 <td colspan=9>
-                PDG22_MOM200GeV_ILD_l1_v01 and  PDG22_MOM200GeV_ILD_o1_v05 didn't completed sucessfully
-        </td>
+<td></td>
+<td colspan=9>
+PDG22_MOM200GeV_ILD_l1_v01 and  PDG22_MOM200GeV_ILD_o1_v05 didn't completed sucessfully
+</td>
 </tr>
-
-
 
 </table>
 
 
+<!--  ---------------------------------------------->
+<h1>Reconstruction samples</h1>
+
+
+<table border=1>
+<tr>
+<td>Production<br>date-time</td>
+<td>iLCSoft<br>version</td>
+<td>ILDConfig</td>
+<td>Input sim.<br>production</td>
+<td>Data<br>type</td>
+<td>Detector<br>Model</td>
+<td>No. of jobs<br>submitted</td>
+<td>No. of jobs<br>completed</td>
+<td>No. of events<br> per file</td>
+<td>Reconstructed<br>files</td>
+<td>DST<br>files</td>
+<td>Log<br>files</td>
+<td>Replicas</td>
+</tr>
+
+<tr>
+<td><a name="ddmarlin-20170216-1122">20170216-1122</a></td>
+<td>v01-19-01</td>
+<td><a href="#ildconfig-v01-19-01-am20170127">v01-19-01-am20170127</a></td>
+<td><a href="#ddsim-20170203-0957">20170203-0957</a></td>
+<td>Calibration<br>uds</td>
+<td>ILD_o1_v05<br>ILD_l1_v01<br>ILD_s1_v01</td>
+<td>18</td>
+<td>18</td>
+<td>100</td>
+<td><a href="recfiles-20170216-1122.txt">rec file path</a></td>
+<td><a href="dstfiles-20170216-1122.txt">dst file path</a></td>
+<td><a href="marlinlog-20170216-1122.txt">log file path</a></td>
+<td>PNNL-SRM</td>
+</tr>
+
+<tr>
+<td></td>
+<td colspan=12>
+Many debug messages printed by MyExtrToSIT were suppressed by setting Verbosity=WARNING, but still many print outs by ZMxpvImproperRotation were seen in marlin log files. Thus production of more than 100 events was not attemped.
+</td>
+</tr>
+
+
+</table>
+<p>
+<hr>
+(Note):
+<nl>
+<li>
+<a name="ildconfig-v01-19-01-am20170127">ILDConfig v01-19-01-am20170127</a> 
+&nbsp;
+Based on ILDConfig-v01-19-01-pre, but additionally included DD4Hep geometry data for ILD_o1_v05, ILD_l1_v01, ILD_s1_v01, which is available at 'LFN:/ilc/user/a/amiyamot/software/ildconfig/v01-19-01-am20170127.tar.gz
+</li>
 </body>
 </html>
